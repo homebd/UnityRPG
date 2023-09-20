@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController[] _AnimCon;
 
     private Animator _anim;
-    PlayerStatsData _data;
 
     private void Awake()
     {
@@ -15,6 +14,6 @@ public class Player : MonoBehaviour
     }
 
     private void Start() {
-        _anim.runtimeAnimatorController = _AnimCon[(int)_data.Type];
+        //_anim.runtimeAnimatorController = _AnimCon[(int)_data.Type];
     }
 }

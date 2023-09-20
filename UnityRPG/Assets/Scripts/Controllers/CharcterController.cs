@@ -9,4 +9,8 @@ public class CharcterController : MonoBehaviour
     public event Action<Vector2> OnLookEvent;
 
     protected CharacterStatsHandler Stats;
+
+    private void Awake() {
+        Stats = GetComponent<CharacterStatsHandler>();
+    }
 }

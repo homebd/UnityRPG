@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "StatSO", menuName = "Scriptable Object/StatSO")]
-public class StatsSO : ScriptableObject
+public class StatSO : ScriptableObject
 {
     public int MaxHP;
     public int MaxMP;

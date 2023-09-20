@@ -30,8 +30,3 @@ public enum ArmorType {
     BOOTS,
     POTIONLIKE
 }
-
-public enum PanelType {
-    STATUS,
-    INVENTORY
-}
