@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class CharacterStatsData
 {
+    public string Name { get; set; }
     public int MaxHP { get; set; }
     public int CurHP { get; set; }
     public int MaxMP { get; set; }
