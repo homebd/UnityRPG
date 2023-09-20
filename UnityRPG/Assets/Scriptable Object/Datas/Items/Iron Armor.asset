@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56dd6a6635935dc4ea760da9de93f7a5, type: 3}
+  m_Name: Iron Armor
+  m_EditorClassIdentifier: 
+  Image: {fileID: 0}
+  Id: 0
+  Name: "\uCCA0 \uAC11\uC637"
+  Discription: "\uCCA0\uB85C \uB9CC\uB4E0 \uAC11\uC637\uC774\uB2E4. \uAF64\uB098
+    \uBB34\uAC81\uB2E4."
+  Stat: 3
+  Price: 1500
+  Type: 1

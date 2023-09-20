@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class ActionButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public PanelType Type;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void NotifyPanelActivation() {
+        UIManager.Instance.TogglePanel(Type);
     }
 }
