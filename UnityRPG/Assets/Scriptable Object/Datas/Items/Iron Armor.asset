@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56dd6a6635935dc4ea760da9de93f7a5, type: 3}
   m_Name: Iron Armor
   m_EditorClassIdentifier: 
-  Image: {fileID: 0}
-  Id: 0
+  Icon: {fileID: 1054977988, guid: 3fdb391c4acfb50428e2a06db29c5545, type: 3}
+  Id: 1
   Name: "\uCCA0 \uAC11\uC637"
-  Discription: "\uCCA0\uB85C \uB9CC\uB4E0 \uAC11\uC637\uC774\uB2E4. \uAF64\uB098
-    \uBB34\uAC81\uB2E4."
+  Discription: "\uCCA0\uB85C \uB9CC\uB4E0 \uAC11\uC637\uC774\uB2E4."
+  CanStack: 0
   Stat: 3
   Price: 1500
   Type: 1

@@ -18,7 +18,7 @@ public class CharacterStatController : MonoBehaviour
     }
 
     // 임시
-    private void Start() {
+    private void Update() {
         CallChangeStatEvent(Stats);
     }
 }

@@ -9,6 +9,7 @@ public class ItemSO : ScriptableObject
     [field: SerializeField] public int Id;
     [field: SerializeField] public string Name;
     [field: SerializeField] [TextArea] public string Discription;
+    [field: SerializeField] public bool CanStack;
     [field: SerializeField] public int Stat;
     [field: SerializeField] public int Price;
 }

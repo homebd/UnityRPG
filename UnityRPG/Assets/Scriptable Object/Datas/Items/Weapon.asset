@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054a290210d9e5c4b98c27d08d621098, type: 3}
+  m_Name: Weapon
+  m_EditorClassIdentifier: 
+  Icon: {fileID: -8322224, guid: 3fdb391c4acfb50428e2a06db29c5545, type: 3}
+  Id: 2
+  Name: "\uC7A5\uB3C4"
+  Discription: "\uAE38\uACE0 \uAC00\uB290\uB2E4\uB780 \uAC80\uC774\uB2E4."
+  CanStack: 0
+  Stat: 5
+  Price: 1000
+  Type: 0
