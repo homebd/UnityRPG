@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ShopUI : MonoBehaviour
 {
-    public ShopController ShopController;
     public Text GoldText;
     public ShopSlotUI SlotPrefab;
     public GameObject ContentsObject;
@@ -13,10 +12,9 @@ public class ShopUI : MonoBehaviour
     //private List<ShopSlotUI> _slots;
 
     private void Awake() {
-        ShopController.OnInitEvent += Init;
-
-        // 인벤토리와 마찬가지로 임시..
-        ShopController.Init();
+        GameManager.Instance.Shop.OnInitEvent += Init;
+        GameManager.Instance.PlayerStat.OnInitEvent += ShowGold;
+        GameManager.Instance.PlayerStat.OnChangeGoldEvent += ShowGold;
     }
     public void Init(ShopData shop) {
         int ItemSize = shop.Items.Count;
@@ -30,17 +28,19 @@ public class ShopUI : MonoBehaviour
             newSlot.NameText.text = itemData.Name;
             newSlot.DescriptionText.text = itemData.Description;
             newSlot.PriceText.text = $"{itemData.Price.ToString()} G";
-            newSlot.BuyButton.onClick.AddListener(ClickBuyButton);
+            newSlot.BuyButton.onClick.AddListener(() => ClickBuyButton(itemData));
 
             //_slots.Add(newSlot);
         }
     }
 
-    public void ClickBuyButton() {
-        ShopController.CallBuyEvent();
+    public void ClickBuyButton(ItemData itemData) {
+        // view -> controller로 시그널 보내는 법..?
+        // view에선 controller의 존재(구조)를 모르게 하라던데
+        GameManager.Instance.Shop.Buy(itemData);
     }
 
-    public void ChangeGold(CharacterStatsData character) {
-        GoldText.text = $"{character.Gold.ToString()} G";
+    public void ShowGold(CharacterStatsHandler character) {
+        GoldText.text = $"{character.CurStats.Gold.ToString()} G";
     }
 }

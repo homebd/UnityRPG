@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class StatusUI : MonoBehaviour
 {
-    public CharacterStatController StatController;  
     public Text NameText;
     public Text LevelText;
     public Text ExpText;
@@ -17,7 +16,7 @@ public class StatusUI : MonoBehaviour
     public Text DCText;
 
     private void Awake() {
-        StatController.OnChangeStatEvent += UpdateStatus;
+        GameManager.Instance.PlayerStat.OnChangeStatEvent += UpdateStatus;
     }
 
     public void UpdateStatus(CharacterStatsHandler stat) {

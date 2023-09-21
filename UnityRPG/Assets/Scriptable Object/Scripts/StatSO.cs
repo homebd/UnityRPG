@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "StatSO", menuName = "Scriptable Object/StatSO")]
 public class StatSO : ScriptableObject
 {
+    public PlayerType Type;
     public int MaxHP;
     public int MaxMP;
     public int Level;

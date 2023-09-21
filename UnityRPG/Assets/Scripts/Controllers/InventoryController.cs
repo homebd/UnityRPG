@@ -11,7 +11,6 @@ public class InventoryController : MonoBehaviour
 
     public void Init() {
         _playerInventory = new InventoryData();
-
         // TODO: SO화하여 몬스터 인벤토리 등에도 사용하도록 하기
         _playerInventory.MaxSize = 20;
         _playerInventory.Slots = new List<InventorySlot>();
@@ -20,7 +19,8 @@ public class InventoryController : MonoBehaviour
     }
 
     // TODO: 수량 선택해서 여러개 한 번에 Add, Sub 할 수 있게
-    public bool AddItem(ItemData item) {
+    public bool AddItem(ItemData itemData) {
+        ItemData item = itemData.GetItem();
         int count = _playerInventory.Slots.Count;
         int index = -1;
 

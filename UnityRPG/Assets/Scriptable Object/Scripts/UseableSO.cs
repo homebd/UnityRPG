@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Useable", menuName = "Scriptable Object/Item/Useable")]
 public class UseableSO : ItemSO
 {
-    [field: SerializeField] public int Count;
+    public int Duration;
 }

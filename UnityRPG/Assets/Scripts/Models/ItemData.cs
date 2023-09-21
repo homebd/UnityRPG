@@ -15,9 +15,10 @@ public class ItemData : MonoBehaviour
 
     public bool CanStack;
 
-    public ItemData GetItemData() {
+    public ItemData GetItem() {
         ItemData newItemData = new ItemData();
 
+        newItemData.ItemSO = ItemSO;
         newItemData.Id = ItemSO.Id;
         newItemData.Icon = ItemSO.Icon;
         newItemData.Name = ItemSO.Name;

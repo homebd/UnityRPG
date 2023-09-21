@@ -38,6 +38,12 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void LateStart() {
+        foreach(var canvas in Canvases) {
+            canvas.gameObject.SetActive(false);
+        }
+    }
+
     public void TogglePanel(int type) {
         if(_curCanvas == null) {
             _curCanvas = Canvases[type];

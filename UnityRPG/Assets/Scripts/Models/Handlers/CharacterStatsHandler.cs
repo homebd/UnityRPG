@@ -17,6 +17,7 @@ public class CharacterStatsHandler : MonoBehaviour
         CurStats = new CharacterStatsData();
 
         // TODO: 기존 데이터와 베이스 데이터를 계산하여 입력
+        CurStats.Type = _baseStats.Type;
         CurStats.Name = "스파르타";
         CurStats.MaxHP = _baseStats.MaxHP;
         CurStats.CurHP = CurStats.MaxHP;
